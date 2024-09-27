@@ -13,7 +13,7 @@ namespace RoleBasedAuthorization.Controllers
         public IActionResult Index()
         {
             var roles = _manager.Roles;
-            return View();
+            return View(roles);
         }
         public IActionResult Create()
         {
